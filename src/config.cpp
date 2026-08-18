@@ -9,8 +9,8 @@ using namespace point;
 
 pros::Controller master(pros::E_CONTROLLER_MASTER); // controller
 
-pros::MotorGroup leftMotors({-9, 6, -8}); // left motors
-pros::MotorGroup rightMotors({-5, 1, -7}); // right motors
+pros::MotorGroup leftMotors({9, -6, 8}); // left motors
+pros::MotorGroup rightMotors({5, -1, 7}); // right motors
 
 // --- State Variables ---
 driveType drivetype    = SPLIT;
@@ -77,12 +77,12 @@ bool devOk() {
         return pros::Motor(absPort).is_installed();
     };
 
-    bool left1Online = isMotorInstalled(-9);
-    bool left2Online = isMotorInstalled(6);
-    bool left3Online = isMotorInstalled(-8);
-    bool right1Online = isMotorInstalled(-5);
-    bool right2Online = isMotorInstalled(1);
-    bool right3Online = isMotorInstalled(-7);
+    bool left1Online = isMotorInstalled(9);
+    bool left2Online = isMotorInstalled(-6);
+    bool left3Online = isMotorInstalled(8);
+    bool right1Online = isMotorInstalled(5);
+    bool right2Online = isMotorInstalled(-1);
+    bool right3Online = isMotorInstalled(7);
 
     bool imuOnline = imu.isConnected();
     bool trackingWheelOnline = trackingWheel.isConnected();
