@@ -1,3 +1,6 @@
+#ifndef CONSTANTS_HPP
+#define CONSTANTS_HPP
+
 #pragma once
 
 #include "point/odometry/PID.hpp"
@@ -41,3 +44,5 @@ namespace point {
     );
 
 } // namespace point
+
+#endif 

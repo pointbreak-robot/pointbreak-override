@@ -1,3 +1,6 @@
+#ifndef PID_HPP
+#define PID_HPP
+
 #pragma once
 
 namespace point {
@@ -18,3 +21,5 @@ class PID {
 };
 
 } // namespace point
+
+#endif

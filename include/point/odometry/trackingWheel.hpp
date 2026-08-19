@@ -1,3 +1,6 @@
+#ifndef TRACKINGWHEEL_HPP
+#define TRACKINGWHEEL_HPP
+
 #pragma once
 
 #include "pros/rotation.hpp"
@@ -45,3 +48,5 @@ private:
 };
 
 } // namespace point
+
+#endif

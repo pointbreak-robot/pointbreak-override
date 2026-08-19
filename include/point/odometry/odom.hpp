@@ -1,3 +1,6 @@
+#ifndef ODOM_HPP
+#define ODOM_HPP
+
 #pragma once
 
 #include "pose.hpp"
@@ -61,3 +64,5 @@ private:
 };
 
 } // namespace point
+
+#endif

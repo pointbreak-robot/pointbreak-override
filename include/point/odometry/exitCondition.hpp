@@ -1,3 +1,6 @@
+#ifndef EXITCONDITION_HPP
+#define EXITCONDITION_HPP
+
 #pragma once 
 
 namespace point {
@@ -16,4 +19,6 @@ class exitCondition {
 };
 
 } // namespace point
+
+#endif 
 

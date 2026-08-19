@@ -53,6 +53,7 @@
 #include "point/chassis/chassis.hpp"
 
 #include "point/mech/optical.hpp"
+#include "point/mech/pneumatics.hpp"
 
 
 

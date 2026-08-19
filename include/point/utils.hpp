@@ -1,3 +1,6 @@
+#ifndef UTILS_HPP
+#define UTILS_HPP
+
 #pragma once
 #include <cmath>
 
@@ -49,3 +52,5 @@ namespace point {
 
 
 } // namespace point
+
+#endif

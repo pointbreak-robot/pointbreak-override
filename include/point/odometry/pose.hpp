@@ -1,3 +1,6 @@
+#ifndef POSE_HPP
+#define POSE_HPP
+
 #pragma once
 
 #include <cmath>
@@ -22,3 +25,5 @@ struct Pose {
 };
 
 } // namespace point
+
+#endif

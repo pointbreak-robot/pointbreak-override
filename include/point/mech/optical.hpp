@@ -1,3 +1,6 @@
+#ifndef OPTICAL_HPP
+#define OPTICAL_HPP
+
 #pragma once
 
 #include "pros/optical.hpp"
@@ -29,3 +32,5 @@ private:
 };
 
 } // namespace point
+
+#endif 

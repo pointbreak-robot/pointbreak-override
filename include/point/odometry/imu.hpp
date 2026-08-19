@@ -1,3 +1,6 @@
+#ifndef IMU_HPP
+#define IMU_HPP
+
 #pragma once
 
 #include "pros/imu.hpp"
@@ -31,3 +34,5 @@ private:
 };
 
 } // namespace point
+
+#endif

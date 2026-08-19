@@ -1,3 +1,6 @@
+#ifndef DISTANCE_HPP
+#define DISTANCE_HPP
+
 #pragma once
 
 #include "point/odometry/pose.hpp"
@@ -31,3 +34,5 @@ private:
 };
 
 } // namespace point
+
+#endif
