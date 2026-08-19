@@ -230,15 +230,15 @@ void Chassis::drive() {
 // these, so remapping ever needs to happen in exactly one place.
 
 static int getThrottleStick() {
-    return master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
-}
-
-static int getSplitTurnStick() {
     return master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
 }
 
+static int getSplitTurnStick() {
+    return master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+}
+
 static int getArcadeTurnStick() {
-    return master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_X);
+    return master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
 }
 
 // Drive types (opcontrol)
@@ -265,9 +265,9 @@ void Chassis::arcade() {
 }
 
 void Chassis::split() {
-    int throttle = getThrottleStick();
-    int turn     = getSplitTurnStick();
-    power(throttle + turn, throttle - turn);
+    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+    int turn     = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+    power(throttle - turn, throttle + turn);
 }
 
 void Chassis::halo() {

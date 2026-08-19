@@ -9,8 +9,8 @@ using namespace point;
 
 pros::Controller master(pros::E_CONTROLLER_MASTER); // controller
 
-pros::MotorGroup leftMotors({9, -6, 8}); // left motors
-pros::MotorGroup rightMotors({5, -1, 7}); // right motors
+pros::MotorGroup leftMotors({-9, 6, -8}); // left motors
+pros::MotorGroup rightMotors({-5, 1, -7}); // right motors
 
 // --- State Variables ---
 driveType drivetype    = SPLIT;
